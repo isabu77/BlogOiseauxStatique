@@ -8,13 +8,19 @@ body{
 	color: #1c1c1c;
 }
 
+header{
+	zoom:1; /* pour interent explorer 6 et 7 */
+}
+
 .titre{
 	text-align: center;
 	margin:20px auto;
 
 }
-header{
-	zoom:1; /* pour interent explorer 6 et 7 */
+
+body section h1,
+body section h2 {
+	text-align: center;
 }
 
 section{
@@ -30,19 +36,35 @@ section{
 article{
 	box-sizing: border-box;
 	border-bottom:1px solid #d8d8d8;
-	height:10%;
+	margin:20px auto;
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin:20px auto;
 }
 
-article div{
+article .corps{
 	padding:10px;
 }
 
+article h2{
+	height: 1em;
+	margin:1px auto;
+}
+article span{
+	font-size:1em;
+	padding:2px;
+}
 
+article p{
+	font-size:1em;
+	margin-top:1em;
+}
 
+article .footer{
+	display:flex;
+	flex-direction: row;
+	justify-content:flex-start;
+}
 
 /* HEADER */
 
@@ -124,10 +146,7 @@ body .menu nav ul li a:focus {
 /*FIN HEADER   DEBUT HOME */
 
 
-body section h1,
-body section h2 {
-	text-align: center;
-}
+
 /* FOOTER */
 
 footer{
