@@ -1,0 +1,188 @@
+* {
+	margin: 0;
+}
+
+body{
+	background-image: linear-gradient(to right, rgb(56, 150, 212) 0%, rgb(35, 136, 203) 50%, rgb(106, 161, 216) 100%);
+	font: 12px/1.4em'PT Sans', Sans-Serif;
+	color: #1c1c1c;
+}
+
+.titre{
+	text-align: center;
+	margin:20px auto;
+
+}
+header{
+	zoom:1; /* pour interent explorer 6 et 7 */
+}
+
+section{
+	box-sizing: border-box;
+	background-color: #fff;
+	width:80%;
+	margin:20px auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+article{
+	box-sizing: border-box;
+	border-bottom:1px solid #d8d8d8;
+	height:10%;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin:20px auto;
+}
+
+article div{
+	padding:10px;
+}
+
+
+
+
+/* HEADER */
+
+body .menu {
+	background-color: rgba(10, 121, 165, 0.877);
+	color: #FFFFFF;
+	height: 50px;
+	position: relative;
+}
+
+body .menu .burger {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	color: inherit;
+	cursor: pointer;
+	font-size: 5vw;
+	line-height: 50px;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	text-align: center;
+	width: 50px;
+}
+
+body .menu .burger:before {
+	content: '☰';
+}
+
+body .menu .burger:checked+nav {
+	height: initial;
+	opacity: 0.9;
+}
+
+body .menu .burger:checked:before {
+	content: 'X';
+}
+
+body .menu nav {
+	background: inherit;
+	font-size: 20px;
+	font-weight: bold;
+	height: 0;
+	overflow: hidden;
+	text-transform: uppercase;
+	transition: height .2s;
+	width: 70%;
+}
+
+body .menu nav>* {
+	display: block;
+	letter-spacing: 1px;
+	padding: 0 20px;
+	width: 70%;
+	font-size: 4vw;
+}
+
+body .menu nav ul {
+	list-style-type: none;
+}
+
+body .menu nav ul li {
+	text-align: left;
+}
+
+body .menu nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* inverser la couleur sur survol en ordi (hover) et clic en mobile (focus pour le tactile)*/
+
+body .menu nav ul li a:hover,
+body .menu nav ul li a:focus {
+	color: #1c1c1c;
+	background: #ccc;
+}
+
+/*FIN HEADER   DEBUT HOME */
+
+
+body section h1,
+body section h2 {
+	text-align: center;
+}
+/* FOOTER */
+
+footer{
+	font-family: 'PT Serif', Serif;
+	font-style: italic;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* media qui a au moins 768 px de large et seulement les ecrans*/
+
+@media only screen and (min-width: 768px) {
+	body .menu .burger {
+		display: none;
+	}
+
+	body .menu nav {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		height: initial;
+	}
+
+	body .menu nav>* {
+		font-size: 1.3vw;
+	}
+
+	body .menu nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* PAGE HOME */
+	.titre {
+		font-size: 3vw;
+	}
+
+	h2 {
+		font-size: 2.5vw;
+	}
+
+
+	/* FOOTER */
+	footer {
+		height: 5vh;
+		display: flex;
+		align-items: center;
+	}
+
+	footer nav {
+		width: 100%;
+	}
+}
+
+
+
+
+
