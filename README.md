@@ -12,7 +12,7 @@ Pour cet exercice, utiliser uniquement HTML, CSS et JS.
 ![maquette](assets\img\homepage.jpg "maquette")
 
 ## Page d'un article
-![maquette](assets\img\pageArticle.jpg "maquette")
+![maquette](./assets/img/pageArticle.jpg "maquette")
 
 ## Page contact
 
