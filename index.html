@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Blog Jardin</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -22,30 +23,38 @@
 	</header>
 	<section>
 		<h1 class="titre">Derrière chez moi...il y a...</h1>
+		<div class="demo">
+			<input type="text" name="" id="search_button"><button>GO
+				<!-- <i class="fas fa-search"></i> --></button>
+		</div>
 		<article>
 			<div>
-				<img src="assets/img/mesange.jpg" alt="mesange">
+				<a href="articlemesange.html"><img src="assets/img/mesange.jpg" alt="mesange"></a>
 			</div>
+
 			<div class="corps">
-				<div class="linespan">
-					<span>Auteur</span>
-					<span>date</span>
-					<span>lectures</span>
-				</div>
-				<h2>La mésange</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et.
-				</p>
-				<div class="footer">
-					<span>vues</span>
-					<span>commenter</span>
-				</div>
+				<a href="articlemesange.html">
+					<div class="linespan">
+						<span>Auteur</span>
+						<span>date</span>
+						<span>lectures</span>
+					</div>
+					<h2>La mésange</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et.
+					</p>
+					<div class="footer">
+						<span>vues</span>
+						<span>commenter</span>
+					</div>
+				</a>
 			</div>
 		</article>
 
 		<article>
 			<div>
 				<img src="assets/img/pinson-arbre-oiseau.jpg" alt="pinson">
+
 			</div>
 			<div class="corps">
 				<div class="linespan">
@@ -134,7 +143,7 @@
 		<label>Subscribe</label>
 		<input type="" name="" placeholder="enter your email">
 	</footer>
-	
+
 	<script type="text/javascript" src="assets/js/script.js"></script>
 
 </body>
