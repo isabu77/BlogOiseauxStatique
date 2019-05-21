@@ -4,15 +4,22 @@ Pour cet exercice, utiliser uniquement HTML, CSS et JS.
 
 ## Page principale (Home) :
 - La zone de travail principale fait 80% de la taille de l'écran et est centrée dans la page.
-- Le fond du reste de l'écran est gris foncé (#202020).
 - Header : un menu, le titre et un champ de recherche de texte dans les articles
 - Le menu : Home, Connexion, Inscription, Contact
-- La section des articles datés : une image , l'auteur, le titre et le corps, un bouton "partager"
-- Footer : copyright, lien 'mentions légales' 
+- La section des articles datés : une image , l'auteur, le titre et sous-titre, un bouton "partager"
+- Footer : copyright, lien 'mentions légales'
+ 
+![maquette](assets\img\homepage.jpg "maquette")
 
-## Page d'un article : 
+## Page d'un article
+![maquette](assets\img\pageArticle.jpg "maquette")
 
-## 
+## Page contact
+
+## Page Connexion
+
+## Page Inscription
+
 
 
 Fonts :
