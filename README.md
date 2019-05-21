@@ -9,10 +9,10 @@ Pour cet exercice, utiliser uniquement HTML, CSS et JS.
 - La section des articles datés : une image , l'auteur, le titre et sous-titre, un bouton "partager"
 - Footer : copyright, lien 'mentions légales'
  
-![maquette](assets\img\homepage.jpg "maquette")
+![maquette](./assets/img/homepage.jpg "maquette")
 
 ## Page d'un article
-![maquette](assets\img\pageArticle.jpg "maquette")
+![maquette](./assets/img/pageArticle.jpg "maquette")
 
 ## Page contact
 

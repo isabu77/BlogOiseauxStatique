@@ -3,7 +3,8 @@
 }
 
 body{
-	background-image: linear-gradient(to right, rgb(56, 150, 212) 0%, rgb(35, 136, 203) 50%, rgb(106, 161, 216) 100%);
+	background-image: linear-gradient(to right, rgb(97, 167, 18) 0%, rgb(75, 185, 24) 50%, rgb(97, 167, 18) 100%);
+	/*url("assets/img/jardin.jpg")  */
 	font: 12px/1.4em'PT Sans', Sans-Serif;
 	color: #1c1c1c;
 }
@@ -68,6 +69,8 @@ article p{
 	font-size:1em;
 	margin-top:1em;
 	margin-bottom:1em;
+	text-align:left;
+	text-indent: 1em;
 }
 
 article .footer{
@@ -79,10 +82,11 @@ article .footer{
 /* HEADER */
 
 body .menu {
-	background-color: rgba(10, 121, 165, 0.877);
+	background-color: rgba(rgb(139, 212, 56));
 	color: #FFFFFF;
 	height: 50px;
 	position: relative;
+	margin-top:10px;
 }
 
 body .menu .burger {
