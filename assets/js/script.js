@@ -32,6 +32,19 @@ function AfficheNbComment(numid){
 
 }
 
+function recherche(){
+	var text = document.getElementById("search_button").value;
+	var listElt = document.getElementsByClassName("corps");
+	var i = 0;
+			var str = document.querySelectorAll('p');
+			for(var i = 0 ; i < str.length ; i++){
+				console.log(str[i].innerText);
+				if (str[i].innerText.indexOf(text) ){
+					str[i].style.color = "red";
+				}
+			}
+}
+
 
 
 
