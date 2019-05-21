@@ -4,7 +4,7 @@ body section h2 {
 	text-align: left;
 }
 
-section{
+.wrapper{
 	box-sizing: border-box;
 	background-color: #fff;
 	width:80%;
@@ -17,6 +17,7 @@ section{
 article{
 	box-sizing: border-box;
 	border-bottom:1px solid #d8d8d8;
+	width:90%;
 	margin:20px auto;
 	display:flex;
 	flex-direction: row;
@@ -29,6 +30,10 @@ article a{
 }
 article .corps{
 	padding:10px;
+	width:70%;
+}
+article .figure{
+	width:30%;
 }
 
 article img{

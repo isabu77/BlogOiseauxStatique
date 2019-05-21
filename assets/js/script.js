@@ -4,6 +4,12 @@ function afficheTexte(texte, id){
 	document.getElementById(id).innerHTML = texte;
 }
 
+function contact(){
+
+	document.getElementById("object").innerHTML = "commentaire";
+
+}
+
 
 
 
