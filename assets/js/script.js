@@ -1,4 +1,4 @@
-var nbCommentMesange = 0;
+var nbComments = 0;
 /*AfficheNbComment(1);*/
 
 /* affichage d'un texte dans l'élément id */
@@ -13,11 +13,11 @@ function comment(elt){
 	var errnId = "err"+elt.id.toString();
 
 	if (document.getElementById(textnId).value != ""){
-		nbCommentMesange++;
+		nbComments++;
 		document.getElementById(commentnId).innerHTML += "<li>" + document.getElementById(textnId).value + "</li>";
 		document.getElementById(textnId).value = "";
 		document.getElementById(errnId).style.color = "black";
-		document.getElementById(nId).innerHTML =  nbCommentMesange.toString() + " commentaire(s)";
+		document.getElementById(nId).innerHTML =  nbComments.toString() + " commentaire(s)";
 	}else{
 		document.getElementById(errnId).style.color = "red";
 	}
@@ -26,7 +26,7 @@ function comment(elt){
 }
 
 function AfficheNbComment(numid){
-	console.log(nbCommentMesange);
+	console.log(nbComments);
 	var nId = "id"+numid.toString();
 	document.getElementById(nId).innerHTML =  nbCommentMesange.toString() + " commentaires";
 
