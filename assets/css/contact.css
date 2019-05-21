@@ -11,3 +11,11 @@ section.article-container > div{
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
+
+section.article-container h3{
+	color: green;
+}
+
+section.article-container p{
+	text-align:left;
+}

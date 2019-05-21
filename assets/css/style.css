@@ -49,22 +49,20 @@ article span{
 }
 article .linespan{
 	font-size:1em;
-	margin:2px;
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
+	margin:10px;
 }
 article p{
 	font-size:1em;
 	margin-top:1em;
 	margin-bottom:1em;
 	text-align:left;
-	text-indent: 1em;
 }
 
 article .footer{
+	padding-top:30px;
+	border-top:1px solid #d8d8d8;
 	display:flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
@@ -78,6 +76,15 @@ article .footer{
 	h2 {
 		font-size: 2.5vw;
 	}
+
+	article .footer{
+		padding-top:30px;
+		border-top:1px solid #d8d8d8;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
 }
 
 
