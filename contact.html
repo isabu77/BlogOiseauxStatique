@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Contact</title>
     <link rel="stylesheet" type="text/css" href="assets/css/header.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
 </head>
 
 <body>
@@ -19,25 +19,28 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h1 class="titreduhaut">Contact</h1>
-        <form id='contactForm' class="formProfil" method="post" action="">
-            <p>
-                <label for="from">Courriel pour la réponse</label>
-                <input type="text" name="from" id="from" />
-            </p>
-            <p>
-                <label for="object">Objet</label>
-                <input type="text" name="object" id="object" />
-            </p>
-            <p>
-                <textarea name="message" id="message" rows="20" cols="60"></textarea>
-            </p>
-            <p class=bouton>
-                <input type="reset" name="reset" value="Effacer" />
-                <input type="submit" name="send" value="Envoyer" />
-            </p>
-        </form>
+    <h1 class="titre">Derrière chez moi...il y a...</h1>
+    <section class="login-container">
+        <div>
+            <h2>Contact</h2>
+            <form method="post" action="">
+                <p>
+                    <label for="from">Courriel pour la réponse</label>
+                    <input type="text" name="from" id="from" />
+                </p>
+                <p>
+                    <label for="object">Objet</label>
+                    <input type="text" name="object" id="object" />
+                </p>
+                <p>
+                    <textarea name="message" id="message" rows="20" cols="60"></textarea>
+                </p>
+                <p class=bouton>
+                    <input type="reset" name="reset" value="Effacer" />
+                    <input type="submit" name="send" value="Envoyer" />
+                </p>
+            </form>
+        </div>
     </section>
 </body>
 
