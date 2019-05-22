@@ -26,10 +26,10 @@ header {
 
 @media (max-width:767px) {
 	.menu {
-		background-color: #00d440;
+		background-color:transparent;
 		color: #fff;
-		height: 30px;
-		position: relative;
+		height: 50px;
+		position: fixed;
 	}
 
 	.menu .burger {
@@ -43,7 +43,7 @@ header {
 		margin: 0;
 		outline: 0;
 		padding: 0;
-		text-align: center;
+		text-align: left;
 		width: 50px;
 	}
 
@@ -52,7 +52,7 @@ header {
 	}
 
 	.menu .burger:checked+nav {
-		height: calc(100vh - 50px);
+		height: calc(20vh - 50px);
 		opacity: .9;
 	}
 
@@ -80,13 +80,14 @@ header {
 	}
 
 	.menu nav ul li {
-		text-align: center;
+		text-align: left;
 		padding: 3% 0;
 	}
 
 	.menu nav ul li a {
 		color: #fff;
-	}
+		text-decoration: none;
+}
 
 	.menu {
 		z-index: 9999;
@@ -103,13 +104,20 @@ header {
 
 	.menu {
 		background-color: #00d440;
+		margin: 0 0 0 -450px;
+		width: 900px;
+		height:50px;
+		left: 50%;
+		top:0;
+		position: fixed;
 	}
 
 	.menu nav ul {
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		height: 70px;
+		height: 50px;
 	}
 
 	.menu nav ul li {
