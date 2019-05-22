@@ -16,11 +16,11 @@ html{
 
 section .login-container{
 	background: rgba(82, 243, 18, 0.274);
+	height: 100vw;
 }
 
 section.login-container > div{
 	width: 450px;
-	height:100%;
 	margin: 80px auto;
 	padding: 20px;
 	text-align: center;
@@ -36,10 +36,12 @@ section.login-container form{
 
 form input[type="password"],
 form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
 form button[type="submit"],
 form textarea{
 	width: 100%;
-	margin-bottom: 32px;
+	margin-bottom: 10px;
 	padding: 16px;
 	color : #333;
 	border: 1px solid #ccc;
@@ -51,6 +53,10 @@ form input[type="password"]:focus,
 form input[type="password"]:hover,
 form input[type="text"]:focus,
 form input[type="text"]:hover,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="email"]:hover,
+form input[type="tel"]:hover,
 form textarea:focus,
 form textarea:hover{
 	background-color: #ccc;
