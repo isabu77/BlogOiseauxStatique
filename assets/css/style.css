@@ -4,10 +4,15 @@ body section h2 {
 	text-align: left;
 }
 
+.demo{
+	align-self: center;
+	margin-right:10px;
+
+}
 .wrapper{
 	box-sizing: border-box;
 	background-color: #eee;
-	width:80%;
+	width:75%;
 	margin:20px auto;
 	display:flex;
 	flex-direction: column;
@@ -84,7 +89,11 @@ article .footer{
 		flex-direction: row;
 		justify-content: space-between;
 	}
+	.demo{
+		align-self: flex-end;
+		margin-right:10px;
 	
+	}	
 }
 
 

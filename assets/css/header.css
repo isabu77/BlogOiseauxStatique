@@ -1,5 +1,5 @@
-body{
-	background-image: url("../img/jardin.jpg");
+body {
+	background-image: url("../img/cielverger.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	/*linear-gradient(to right, rgb(97, 167, 18) 0%, rgb(75, 185, 24) 50%, rgb(97, 167, 18) 100%);*/
@@ -8,157 +8,149 @@ body{
 	color: #1c1c1c;
 }
 
-header{
-	zoom:1; /* pour interent explorer 6 et 7 */
+header {
+	zoom: 1;
+	/* pour interent explorer 6 et 7 */
 }
 
-.titre{
+.titre {
 	text-align: center;
-	margin:20px auto;
-	font-size: 12px;
-	color:green;
+	margin: 20px auto;
+	font-size: 24px;
+	color: green;
 
 }
 
 
-/* HEADER */
+/* media qui a au plus 767 px de large  (mobile) */
 
-body .menu {
-	background-color: rgba(rgb(139, 212, 56));
-	color: #FFFFFF;
-	height: 50px;
-	position: relative;
-	margin-top:10px;
+@media (max-width:767px) {
+	.menu {
+		background-color: #00d440;
+		color: #fff;
+		height: 30px;
+		position: relative;
+	}
+
+	.menu .burger {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		color: inherit;
+		cursor: pointer;
+		font-size: 5vw;
+		line-height: 50px;
+		margin: 0;
+		outline: 0;
+		padding: 0;
+		text-align: center;
+		width: 50px;
+	}
+
+	.menu .burger:before {
+		content: '☰';
+	}
+
+	.menu .burger:checked+nav {
+		height: calc(100vh - 50px);
+		opacity: .9;
+	}
+
+	.menu .burger:checked:before {
+		content: 'X';
+	}
+
+	.menu nav {
+		background: inherit;
+		font-size: 20px;
+		font-weight: 700;
+		height: 0;
+		overflow: hidden;
+		text-transform: uppercase;
+		transition: height .3s;
+		width: 100%;
+	}
+
+	.menu nav>* {
+		display: block;
+		letter-spacing: 1px;
+		padding: 0 20px;
+		width: 100%;
+		font-size: 4vw;
+	}
+
+	.menu nav ul li {
+		text-align: center;
+		padding: 3% 0;
+	}
+
+	.menu nav ul li a {
+		color: #fff;
+	}
+
+	.menu {
+		z-index: 9999;
+	}
+
 }
 
-body .menu .burger {
-	appearance: none;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	color: inherit;
-	cursor: pointer;
-	font-size: 5vw;
-	line-height: 50px;
-	margin: 0;
-	outline: 0;
-	padding: 0;
-	text-align: center;
-	width: 50px;
-}
+/* media qui a au moins 768 px de large */
 
-body .menu .burger:before {
-	content: '☰';
-}
-
-body .menu .burger:checked+nav {
-	height: initial;
-	opacity: 0.9;
-}
-
-body .menu .burger:checked:before {
-	content: 'X';
-}
-
-body .menu nav {
-	background: inherit;
-	font-size: 20px;
-	font-weight: bold;
-	height: 0;
-	overflow: hidden;
-	text-transform: uppercase;
-	transition: height .2s;
-	width: 70%;
-}
-
-body .menu nav>* {
-	display: block;
-	letter-spacing: 1px;
-	padding: 0 20px;
-	width: 70%;
-	font-size: 4vw;
-}
-
-body .menu nav ul {
-	list-style-type: none;
-}
-
-body .menu nav ul li {
-	text-align: left;
-}
-
-body .menu nav ul li a {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-/* inverser la couleur sur survol en ordi (hover) et clic en mobile (focus pour le tactile)*/
-
-body .menu nav ul li a:hover,
-body .menu nav ul li a:focus {
-	color: #1c1c1c;
-	background: #ccc;
-}
-
-/*FIN HEADER */
-
-/* FOOTER */
-
-footer{
-	font-family: 'PT Serif', Serif;
-	font-style: italic;
-	text-align: center;
-	font-size: 18px;
-	color:black;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-}
-
-/* media qui a au moins 768 px de large et seulement les ecrans*/
-
-@media only screen and (min-width: 768px) {
-	body .menu .burger {
+@media (min-width:768px) {
+	input[type=checkbox] {
 		display: none;
 	}
 
-	body .menu nav {
-		width: 100%;
+	.menu {
+		background-color: #00d440;
+	}
+
+	.menu nav ul {
 		display: flex;
+		justify-content: center;
 		align-items: center;
-		height: initial;
+		height: 70px;
 	}
 
-	body .menu nav>* {
-		font-size: 1.3vw;
+	.menu nav ul li {
+		margin: 0 10%;
+		list-style-type: none;
 	}
 
-	body .menu nav ul {
-		display: flex;
-		justify-content: space-around;
-	}
-	
-	.titre {
-		font-size: 24px;
+	.menu nav ul li a {
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		text-decoration: none;
 	}
 
-	/* FOOTER */
-	footer {
-		height: 5vh;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
-		font-size: 18px;
-		color:black;
-		}
-
-	footer nav {
-		width: 100%;
-	}
 }
 
+footer {
+	background-color: #00d440;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+	margin-top: 2%;
+}
 
+.top-Home {
+	padding: 5% 12% 5% 16%;
+	border-radius: 5px;
+	text-align: center;
+}
 
+footer p {
+	color: #fff;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
 
-
+footer i {
+	color: #fff;
+	font-size: 20px;
+}
