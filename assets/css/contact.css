@@ -1,21 +1,30 @@
-section .article-container{
-	background: rgba(82, 243, 18, 0.274);
+section .article-container {
+    background: rgba(82, 243, 18, 0.274);
 }
 
-section.article-container > div{
-	width: 90%;
-	margin: 80px auto;
-	padding: 20px;
-	text-align: center;
-	background: #eee;
-	border: 1px solid #ccc;
-	border-radius: 5px;
+section.article-container>div {
+    width: 90%;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-section.article-container h3{
-	color: green;
+section.article-container h3 {
+    color: green;
 }
 
-section.article-container p{
-	text-align:left;
+section.article-container p {
+    text-align: left;
+}
+
+.footer button {
+    border-radius: 20px;
+}
+
+.footer button:active {
+    border-style: none;
+    background-color: #F7F7F7;
 }
