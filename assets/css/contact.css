@@ -22,9 +22,12 @@ section.article-container p {
 
 .footer button {
     border-radius: 20px;
+    outline: none;
 }
 
 .footer button:active {
+    border-radius: 20px;
     border-style: none;
-    background-color: #F7F7F7;
+    background-color: rgb(199, 193, 193);
+    outline: none;
 }

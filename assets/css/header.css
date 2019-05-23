@@ -41,10 +41,10 @@ header {
         color: inherit;
         cursor: pointer;
         font-size: 5vw;
-        line-height: 50px;
+        line-height: 20px;
         margin: 0;
         outline: 0;
-        padding: 0;
+        padding: 5px 5px;
         text-align: left;
         width: 50px;
     }
@@ -52,7 +52,7 @@ header {
         content: '☰';
     }
     .menu .burger:checked+nav {
-        height: calc(20vh - 50px);
+        height: calc(30vh - 50px);
         opacity: .9;
     }
     .menu .burger:checked:before {
@@ -72,7 +72,7 @@ header {
     .menu nav>* {
         display: block;
         letter-spacing: 1px;
-        padding: 0 20px;
+        padding: 0 5px;
         width: 100%;
         font-size: 4vw;
     }
@@ -81,7 +81,7 @@ header {
     }
     .menu nav ul li {
         text-align: left;
-        padding: 3% 0;
+        padding: 1% 0;
     }
     .menu nav ul li a {
         color: rgb(68, 62, 62);
