@@ -1,4 +1,5 @@
 var nbComments = 0;
+/* afficher tous les commentaires enregistrés à l'ouverture de l'article */
 afficheCommentaires();
 
 /* affichage d'un texte dans l'élément id */
@@ -6,6 +7,7 @@ function afficheTexte(texte, id) {
     document.getElementById(id).innerHTML = texte;
 }
 
+/* clic sur commenter pour ajouter un commentaire à l'article */
 function comment(elt) {
     var nId = "id" + elt.id.toString();
     var textnId = "text" + elt.id.toString();
@@ -26,14 +28,14 @@ function comment(elt) {
 
 }
 
+/* afficher le nombre de commentaires de l'article */
 function AfficheNbComment(numid) {
-    console.log(nbComments);
     var nId = "id" + numid.toString();
     document.getElementById(nId).innerHTML = nbCommentMesange.toString() + " commentaires";
 
 }
 
-
+/* ajout d'un commentaire dans le localStorage de la page */
 function ajouteCommentaire(texte) {
     var gNotifications = [];
     var comment = document.location.href.split("/").pop();
@@ -52,6 +54,7 @@ function ajouteCommentaire(texte) {
 
 }
 
+/* afficher tous les commentaires enregistrés de l'article */
 function afficheCommentaires() {
     nbComments = 0;
     var gNotifications = [];
@@ -72,18 +75,15 @@ function afficheCommentaires() {
     }
 }
 
-
+/* recherhce d'un texte dans les titres des articles de la page d'accueil */
 function recherche() {
-    var text = document.getElementById("search_button").value;
-    var listElt = document.getElementsByClassName("corps");
-    var str = document.querySelectorAll('h2');
-    for (var i = 0; i < str.length; i++) {
-        console.log(str[i].innerText.indexOf(text));
-        if (str[i].innerText.indexOf(text) >= 0) {
-            str[i].style.color = "red";
+    var text = document.getElementById("search_button").value.toUpperCase();
+    var listeH2 = document.querySelectorAll('h2');
+    for (var i = 0; i < listeH2.length; i++) {
+        if (listeH2[i].innerText.toUpperCase().indexOf(text) >= 0) {
+            listeH2[i].style.color = "red";
         } else {
-            str[i].style.color = "black";
-
+            listeH2[i].style.color = "black";
         }
     }
 }
